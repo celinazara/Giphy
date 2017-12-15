@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GiphTastic!</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/giphy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="wholeThing">
+
+<div class="jumbotron" id="header">
+ <h1>Couch Potato Time!</h1>
+  <h4>Search for your favorite Netflix shows!<br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
+  <iframe  id="narcos" src="https://giphy.com/embed/BlxPKxlNWsJJ6" width="480" height="264" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/BlxPKxlNWsJJ6"></a></p>
+  <iframe id="couch" src="https://giphy.com/embed/JQtjrjz75ttYY" width="480" height="264" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sundays-JQtjrjz75ttYY"></a></p>
+ 
+</div>
+
+<form class="form-inline" id="netflixSearch">
+  <div class="form-group">
+    <label for="netflixInput">SEARCH</label>
+    <input type="text" id="netflixInput">
+  </div>
+ 
+  <input id="addShow" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="show" data-search="Stranger Things">Stranger Things</button>
+      <button class="btn btn-primary" id="show" data-search="Narcos">Narcos</button>
+      <button class="btn btn-primary" id="show" data-search="Rogue One: A Star Wars Story">Rogue One: A Star Wars Story</button>
+      <button class="btn btn-primary" id="show" data-search="Mean Girls">Mean Girls</button>
+
+      <div id="myButtons"></div>
+    </div> 
+  </div> 
+</div> 
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> 
+</div> 
+
+
+<script type="text/javascript" src="assets/giphy.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
