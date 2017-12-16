@@ -9,8 +9,7 @@ var topics = [];
 	var x = $(this).data("search");
 	console.log(x);
 
-	var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag";
-
+	var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=8yWkpYGD5UO0aWNUjEMvx2I7kJAXReUu&q=Netflix&limit=10&offset=0&rating=PG-13&lang=en";
 	console.log(queryURL);
 
 	$.ajax({
