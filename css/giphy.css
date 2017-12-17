@@ -1,11 +1,36 @@
 #header {
-	background-color: #e50914;
-	color: #ffffff;
+	background-color: #000000;
+	color: #db0000;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 15px;
 	font-family: "Carrois Gothic SC", sans-serif;
 }
+/* Logo */
+span {
+	font-size: 5em;
+	font-family: impact;
+	display: block;
+	
+	$letters: 12;
+
+}
+/*Attempt same Netflix animation*/
+.logo{
+	perspective: 1000px;
+	perspective-origin: 50% 0;
+	font-size: 30px;
+	display: inline-flex;
+}
+
+.logo span {
+transform-origin: 0 0;
+text-shadow: 10px 10px 20px #831010;
+}
+
+
+
+
 
 #narcos {
 	width: 15%;
